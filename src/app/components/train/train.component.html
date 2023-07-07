@@ -52,7 +52,7 @@
             <hr>
             <div *ngFor="let row of seatMap; let rowIndex = index" class="p-2 flex">
                 <div *ngFor="let seat of row; let seatIndex = index"
-                    [style.background-color]="seat.booked ? 'red' : 'green'"
+                    [style.background-color]="seat.booked ? 'red' : 'pink'"
                     class="h-12 flex items-center justify-center rounded border border-gray-400">
                     <span class="text-sm font-bold text-gray-600 uppercase w-10 flex justify-center">
                         {{ seat.number }}

@@ -10,9 +10,4 @@ export class AppComponent {
   title = 'unstop';
 
   constructor(private trainService: TrainService) {}
-
-  // reset the seats array
-  clearCoach() {
-    this.trainService.reset();
-  }
 }

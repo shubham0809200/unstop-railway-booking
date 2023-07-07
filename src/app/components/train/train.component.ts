@@ -57,21 +57,25 @@ export class TrainComponent implements OnInit {
     console.log('avilaibleSeats', avilaibleSeats);
     if (numSeats > 7) {
       console.log('Cannot reserve more than 7 seats at a time.');
+      alert('Cannot reserve more than 7 seats at a time.');
       return;
     }
 
     if (numSeats < 1) {
       console.log('You must reserve at least one seat.');
+      alert('You must reserve at least one seat.');
       return;
     }
 
     if (numSeats == null) {
       console.log('There are not enough seats.');
+      alert('There are not enough seats.');
       return;
     }
 
     if (numSeats > avilaibleSeats) {
       console.log('There are not enough seats.');
+      alert('There are not enough seats.');
       return;
     }
 
