@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "train-booking-sys": {
+      "hosting": {
+        "unstop": [
+          "train-booking-sys"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "train-booking-sys"
+  }
+}
