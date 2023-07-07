@@ -14,7 +14,7 @@ export class TrainComponent implements OnInit {
   totalSeats: number = 80;
   seatsPerRow: number = 7;
   lastRowSeats: number = 3;
-  rows: number = Math.floor(this.totalSeats / this.seatsPerRow);
+  rows: number = Math.ceil(this.totalSeats / this.seatsPerRow);
   numSeats: number = 0;
 
   seatMapRef?: AngularFireList<any>;
